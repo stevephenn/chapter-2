@@ -1,0 +1,11 @@
+bowtie script for hungate 
+
+for i in `ls *.paired_[12].fastq.gz | cut -f1 -d'.' | sort | uniq`; 
+do 
+subheader.sh ${i}.bowtie 10G 72:00:00 > $i.bowtie.sub ; 
+echo "#$ -pe smp-verbose 8" >>$i.bowtie.sub;
+echo "bowtie2 --very-sensitive-local --no-unal -k 497 -p 8 -x hungate_index -1 ${i}.paired_1.fastq.gz -2 ${i}.paired_2.fastq.gz -S ${i}.hungate_alignment.sam " >> $i.bowtie.sub ;
+done
+
+
+for i in *bowtie.sub; do qsub $i; done
