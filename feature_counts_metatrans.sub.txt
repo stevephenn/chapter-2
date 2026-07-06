@@ -1,0 +1,27 @@
+
+featureCounts -a hungate_trans_all.gtf -t 'CDS' -g 'transcript_id' -O -o SRR1138694.hungate_ali
+gnment.bam.Fc_new.txt  
+
+ls *primary_alignment.bam
+
+
+SRR1138694.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873456.hungate_alignment.sam.bam.primary_alignment.bam
+SRR1138697.hungate_alignment.sam.bam.primary_alignment.bam  
+SRR873457.hungate_alignment.sam.bam.primary_alignment.bam
+SRR1138702.hungate_alignment.sam.bam.primary_alignment.bam 
+SRR873458.hungate_alignment.sam.bam.primary_alignment.bam
+SRR1206249.hungate_alignment.sam.bam.primary_alignment.bam 
+SRR873459.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873450.hungate_alignment.sam.bam.primary_alignment.bam  
+SRR873460.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873451.hungate_alignment.sam.bam.primary_alignment.bam 
+SRR873461.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873452.hungate_alignment.sam.bam.primary_alignment.bam 
+SRR873462.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873453.hungate_alignment.sam.bam.primary_alignment.bam   
+SRR873463.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873454.hungate_alignment.sam.bam.primary_alignment.bam   
+SRR873464.hungate_alignment.sam.bam.primary_alignment.bam
+SRR873455.hungate_alignment.sam.bam.primary_alignment.bam   
+SRR873465.hungate_alignment.sam.bam.primary_alignment.bam
