@@ -1,0 +1,5 @@
+for x in *.bam.tophits; do samtools depth -aa $x > $x.depth; done
+
+
+
+subheader.sh SRR873595hungate_coverage 8G 72:00:00 > SRR873595hungate_coverage.sub
