@@ -1,0 +1,11 @@
+sam to bam 
+
+for i in `ls *hungate_alignment.sam | cut -f1 -d'.' | sort | uniq`;
+do
+subheader.sh ${i}hungate.alilgnment.sam 2G 12:00:00 > $i.hungate_sam2bam.sub ;
+echo "samtools sort ${i}.hungate_alignment.sam >> ${i}hungate_alignment.bam">>$i.hungate_sam2bam.sub;
+echo "samtools index ${i}hungate_alignment.bam" >> $i.hungate_sam2bam.sub;
+
+done
+
+for i in *.hungate_sam2bam.sub; do qsub $i; done
